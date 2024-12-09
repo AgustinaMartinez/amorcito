@@ -53,6 +53,21 @@ h1 {
   transition: filter 300ms;
 }
 
+.images .logo {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.images .logo:active {
+  transform: scale(1.1);
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.images .logo.clicked {
+  transform: scale(2.2);
 }
